@@ -17,9 +17,9 @@ package main
 import (
 	"os"
 
-	"github.com/go-logit/logit"
-	"github.com/go-logit/logit/core/writer"
-	"github.com/go-logit/logit/support/size"
+	"github.com/creky/logit"
+	"github.com/creky/logit/core/writer"
+	"github.com/creky/logit/support/size"
 )
 
 func main() {

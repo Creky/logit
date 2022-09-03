@@ -20,7 +20,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-logit/logit/support/global"
+	"github.com/creky/logit/support/global"
 )
 
 // go test -v -cover -run=^TestBufferWriter$

@@ -19,11 +19,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/go-logit/logit/support/global"
-	"github.com/go-logit/logit/support/runtime"
+	"github.com/creky/logit/support/global"
+	"github.com/creky/logit/support/runtime"
 
-	"github.com/go-logit/logit/core/appender"
-	"github.com/go-logit/logit/core/writer"
+	"github.com/creky/logit/core/appender"
+	"github.com/creky/logit/core/writer"
 )
 
 // Log stores data of a whole logging message.

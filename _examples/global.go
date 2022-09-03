@@ -17,9 +17,9 @@ package main
 import (
 	"encoding/json"
 
-	"github.com/go-logit/logit"
-	"github.com/go-logit/logit/support/global"
-	"github.com/go-logit/logit/support/size"
+	"github.com/creky/logit"
+	"github.com/creky/logit/support/global"
+	"github.com/creky/logit/support/size"
 )
 
 func main() {

@@ -19,8 +19,8 @@ import (
 	"io"
 	"os"
 
-	"github.com/go-logit/logit"
-	"github.com/go-logit/logit/support/global"
+	"github.com/creky/logit"
+	"github.com/creky/logit/support/global"
 )
 
 func main() {

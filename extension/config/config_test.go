@@ -17,8 +17,8 @@ package config
 import (
 	"testing"
 
-	"github.com/go-logit/logit"
-	"github.com/go-logit/logit/support/global"
+	"github.com/creky/logit"
+	"github.com/creky/logit/support/global"
 )
 
 // go test -v -cover -run=^TestConfigOptions$

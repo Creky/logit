@@ -18,8 +18,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/go-logit/logit"
-	"github.com/go-logit/logit/support/global"
+	"github.com/creky/logit"
+	"github.com/creky/logit/support/global"
 )
 
 // uselessWriter is a demo writer to demonstrate the error handling function.

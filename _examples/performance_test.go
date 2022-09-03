@@ -21,8 +21,8 @@ import (
 	"testing"
 	//"time"
 
-	"github.com/go-logit/logit"
-	"github.com/go-logit/logit/core/appender"
+	"github.com/creky/logit"
+	"github.com/creky/logit/core/appender"
 	//"github.com/rs/zerolog"
 	//"github.com/sirupsen/logrus"
 	//"go.uber.org/zap"

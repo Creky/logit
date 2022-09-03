@@ -15,8 +15,8 @@
 package main
 
 import (
-	"github.com/go-logit/logit"
-	"github.com/go-logit/logit/core/appender"
+	"github.com/creky/logit"
+	"github.com/creky/logit/core/appender"
 )
 
 func main() {

@@ -1,6 +1,6 @@
 # 📝 logit
 
-[![Go Doc](_icons/godoc.svg)](https://pkg.go.dev/github.com/go-logit/logit)
+[![Go Doc](_icons/godoc.svg)](https://pkg.go.dev/github.com/creky/logit)
 [![License](_icons/license.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
 [![Build](_icons/build.svg)](_icons/build.svg)
 [![Coverage](_icons/coverage.svg)](_icons/coverage.svg)
@@ -33,7 +33,7 @@ _Check [HISTORY.md](./HISTORY.md) and [FUTURE.md](./FUTURE.md) to know about mor
 ### 🚀 Installation
 
 ```bash
-$ go get -u github.com/go-logit/logit
+$ go get -u github.com/creky/logit
 ```
 
 ### 📖 Examples
@@ -46,8 +46,8 @@ import (
 	"io"
 	"os"
 
-	"github.com/go-logit/logit"
-	"github.com/go-logit/logit/support/global"
+	"github.com/creky/logit"
+	"github.com/creky/logit/support/global"
 )
 
 func main() {

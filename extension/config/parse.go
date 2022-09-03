@@ -23,12 +23,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/go-logit/logit"
-	"github.com/go-logit/logit/core/appender"
-	"github.com/go-logit/logit/core/writer"
-	"github.com/go-logit/logit/extension/file"
-	"github.com/go-logit/logit/support/global"
-	"github.com/go-logit/logit/support/size"
+	"github.com/creky/logit"
+	"github.com/creky/logit/core/appender"
+	"github.com/creky/logit/core/writer"
+	"github.com/creky/logit/extension/file"
+	"github.com/creky/logit/support/global"
+	"github.com/creky/logit/support/size"
 )
 
 const (

@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-logit/logit/support/size"
+	"github.com/creky/logit/support/size"
 )
 
 // go test -v -cover -run=^TestNew$

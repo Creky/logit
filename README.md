@@ -1,6 +1,6 @@
 # 📝 logit
 
-[![Go Doc](_icons/godoc.svg)](https://pkg.go.dev/github.com/go-logit/logit)
+[![Go Doc](_icons/godoc.svg)](https://pkg.go.dev/github.com/creky/logit)
 [![License](_icons/license.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
 [![Build](_icons/build.svg)](_icons/build.svg)
 [![Coverage](_icons/coverage.svg)](_icons/coverage.svg)
@@ -31,7 +31,7 @@ _历史版本的特性请查看 [HISTORY.md](./HISTORY.md)。未来版本的新�
 ### 🚀 安装方式
 
 ```bash
-$ go get -u github.com/go-logit/logit
+$ go get -u github.com/creky/logit
 ```
 
 ### 📖 参考案例
@@ -44,8 +44,8 @@ import (
 	"io"
 	"os"
 
-	"github.com/go-logit/logit"
-	"github.com/go-logit/logit/support/global"
+	"github.com/creky/logit"
+	"github.com/creky/logit/support/global"
 )
 
 func main() {

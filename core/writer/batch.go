@@ -21,7 +21,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/go-logit/logit/support/global"
+	"github.com/creky/logit/support/global"
 )
 
 const (

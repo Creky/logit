@@ -51,7 +51,8 @@ func (ta *textAppender) appendKey(dst []byte, key string) []byte {
 		dst = append(dst, textItemSeparator)
 	}
 
-	dst = appendEscapedString(dst, key)
+	//dst = appendEscapedString(dst, key)
+	dst = append(dst, key...)
 	return append(dst, textKeyValueSeparator)
 }
 
@@ -163,7 +164,8 @@ func (ta *textAppender) AppendFloat64(dst []byte, key string, value float64) []b
 // AppendString appends a string entry to dst.
 func (ta *textAppender) AppendString(dst []byte, key string, value string) []byte {
 	dst = ta.appendKey(dst, key)
-	return appendEscapedString(dst, value)
+	//return appendEscapedString(dst, value)
+	return append(dst, value...)
 }
 
 // AppendTime appends a time.Time entry formatted with format to dst.
@@ -321,7 +323,8 @@ func (ta *textAppender) AppendFloat64s(dst []byte, key string, values []float64)
 // AppendStrings appends a []string entry to dst.
 func (ta *textAppender) AppendStrings(dst []byte, key string, values []string) []byte {
 	return ta.appendArray(dst, key, len(values), func(source []byte, index int) []byte {
-		return appendEscapedString(source, values[index])
+		//return appendEscapedString(source, values[index])
+		return append(source, values[index]...)
 	})
 }
 
@@ -343,7 +346,8 @@ func (ta *textAppender) AppendErrors(dst []byte, key string, values []error) []b
 			return append(source, textNil...)
 		}
 
-		return appendEscapedString(source, values[index].Error())
+		//return appendEscapedString(source, values[index].Error())
+		return append(source, values[index].Error()...)
 	})
 }
 
@@ -355,6 +359,7 @@ func (ta *textAppender) AppendStringers(dst []byte, key string, values []fmt.Str
 			return append(source, textNil...)
 		}
 
-		return appendEscapedString(source, values[index].String())
+		//return appendEscapedString(source, values[index].String())
+		return append(source, values[index].String()...)
 	})
 }

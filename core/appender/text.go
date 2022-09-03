@@ -80,13 +80,15 @@ func (ta *textAppender) AppendBool(dst []byte, key string, value bool) []byte {
 // AppendByte appends a byte entry to dst.
 func (ta *textAppender) AppendByte(dst []byte, key string, value byte) []byte {
 	dst = ta.appendKey(dst, key)
-	return appendEscapedByte(dst, value)
+	//return appendEscapedByte(dst, value)
+	return append(dst, value)
 }
 
 // AppendRune appends a rune entry to dst.
 func (ta *textAppender) AppendRune(dst []byte, key string, value rune) []byte {
 	dst = ta.appendKey(dst, key)
-	return appendEscapedRune(dst, value)
+	//return appendEscapedRune(dst, value)
+	return append(dst, string(value)...)
 }
 
 // AppendInt appends an int entry to dst.
@@ -225,14 +227,16 @@ func (ta *textAppender) AppendBools(dst []byte, key string, values []bool) []byt
 // AppendBytes appends a []byte entry to dst.
 func (ta *textAppender) AppendBytes(dst []byte, key string, values []byte) []byte {
 	return ta.appendArray(dst, key, len(values), func(source []byte, index int) []byte {
-		return appendEscapedByte(source, values[index])
+		//return appendEscapedByte(source, values[index])
+		return append(source, values[index])
 	})
 }
 
 // AppendRunes appends a []rune entry to dst.
 func (ta *textAppender) AppendRunes(dst []byte, key string, values []rune) []byte {
 	return ta.appendArray(dst, key, len(values), func(source []byte, index int) []byte {
-		return appendEscapedRune(source, values[index])
+		//return appendEscapedRune(source, values[index])
+		return append(source, string(values[index])...)
 	})
 }
 
